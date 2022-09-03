@@ -17,5 +17,6 @@ public class CriaConta {
 		System.out.println("O saldo da segunda conta corresponde a " + segundaConta.saldo);
 		
 		System.out.println(primeiraConta);
+		System.out.println(segundaConta);
 	}
 }
