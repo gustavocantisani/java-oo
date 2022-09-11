@@ -5,26 +5,28 @@ public class TestaCliente {
 	public static void main(String[] args) {
 		
 		Conta contaDoGustavo = new Conta();
-		contaDoGustavo.titular = new Cliente();
+		Cliente gustavo = new Cliente();
+		contaDoGustavo.setTitular(gustavo);
 		
-		contaDoGustavo.titular.nome = "Gustavo Cantisani";
-		contaDoGustavo.titular.cpf = "111.000.788-00";
-		contaDoGustavo.titular.profissao = "Product Manager";
+		gustavo.setNome("Gustavo Cantisani");
+		gustavo.setCpf("111.000.788-00");
+		gustavo.setProfissao("Product Manager");
 		
-		System.out.println("O nome do titular da conta e " + contaDoGustavo.titular.nome);
-		System.out.println("O CPF do titular da conta e "+ contaDoGustavo.titular.cpf);
-		System.out.println("A profissao do titular da conta e " + contaDoGustavo.titular.profissao);
+		System.out.println("O nome do titular da conta e " + gustavo.getNome());
+		System.out.println("O CPF do titular da conta e "+ gustavo.getCpf());
+		System.out.println("A profissao do titular da conta e " + gustavo.getProfissao());
 		
 		Conta contaDaKarina = new Conta();
-		contaDaKarina.titular = new Cliente();
+		Cliente karina = new Cliente();
+		contaDaKarina.setTitular(karina);
 		
-		contaDaKarina.titular.nome = "Karina Pessanha";
-		contaDaKarina.titular.cpf = "000.000.111-00";
-		contaDaKarina.titular.profissao = "Bibliotecaria";
+		karina.setNome("Karina Pessanha");
+		karina.setCpf("000.000.111-00");
+		karina.setProfissao("Bibliotecaria");
 		
-		System.out.println("O nome do titular da conta e " + contaDaKarina.titular.nome);
-		System.out.println("O CPF do titular da conta e "+ contaDaKarina.titular.cpf);
-		System.out.println("A profissao do titular da conta e " + contaDaKarina.titular.profissao);
+		System.out.println("O nome do titular da conta e " + karina.getNome());
+		System.out.println("O CPF do titular da conta e "+ karina.getCpf());
+		System.out.println("A profissao do titular da conta e " + karina.getProfissao());
 		
 	}
 }

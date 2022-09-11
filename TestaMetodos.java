@@ -4,21 +4,21 @@ public class TestaMetodos {
 	
 	public static void main(String[] args) {
 		Conta contaDoGustavo = new Conta();
-		contaDoGustavo.saldo = 500;
-		System.out.println(contaDoGustavo.saldo);
+		contaDoGustavo.deposita(500);
+		System.out.println(contaDoGustavo.getSaldo());
 		
 		Conta contaDaKarina = new Conta();
-		contaDaKarina.saldo = 1000;
-		System.out.println(contaDaKarina.saldo);
+		contaDaKarina.deposita(1000);
+		System.out.println(contaDaKarina.getSaldo());
 		
 		contaDoGustavo.deposita(50);
-		System.out.println(contaDoGustavo.saldo);
+		System.out.println(contaDoGustavo.getSaldo());
 		
 		contaDoGustavo.saca(300);
-		System.out.println(contaDoGustavo.saldo);
+		System.out.println(contaDoGustavo.getSaldo());
 		
 		contaDaKarina.transfere(600, contaDoGustavo);
-		System.out.println(contaDoGustavo.saldo);
+		System.out.println(contaDoGustavo.getSaldo());
 	}
 	
 }
